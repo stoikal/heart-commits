@@ -12,10 +12,29 @@
       background-color: red;
       transform: rotate(-45deg);
     }
+
+    #heart:before,
+    #heart:after {
+      content: "";
+      background-color: red;
+      height: 40px;
+      width: 40px;
+      border-radius: 50%;
+    }
+
+    #heart:before {
+      position: relative;
+      display: block;
+      top: -20px;
+      width: 40px;
+    }
+
   </style>
   <title>♥♥♥</title>
 </head>
 <body>
-  <div id="heart"></div>
+  <main>
+    <div id="heart"></div>
+  </main>
 </body>
 </html>
