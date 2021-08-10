@@ -9,6 +9,11 @@
       font-size: 54px;
     }
 
+    .dark {
+      color: white;
+      background-color: black;
+    }
+
     #container {
       position: absolute;
       top: 50%;
@@ -67,10 +72,11 @@
     </div>
   </main>
   <script>
+    var body = document.querySelector('body')
     var heart = document.getElementById('heart')
 
     heart.addEventListener('click', function() {
-      alert('hello')
+      body.classList.toggle('dark')
     })
   </script>
 </body>
